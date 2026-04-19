@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+import Image from "@/components/Img";
 import Link from "next/link";
 import { projects, ProjectTypes } from "@/data/projects";
 

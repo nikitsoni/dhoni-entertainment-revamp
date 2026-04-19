@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import Image from "next/image";
+import Image from "@/components/Img";
 import Link from "next/link";
 import MarqueeStrip from "@/components/Marquee";
 import { projects } from "@/data/projects";

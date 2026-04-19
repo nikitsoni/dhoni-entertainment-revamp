@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+import Image from "@/components/Img";
 import { galleryImages } from "@/data/gallery";
 
 function FadeUp({
