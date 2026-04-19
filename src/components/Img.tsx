@@ -1,6 +1,11 @@
 import NextImage, { ImageProps } from "next/image";
 
-const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+// Hardcoded to match basePath in next.config.ts — needed because next/image
+// with unoptimized:true doesn't prepend basePath in static exports.
+const BASE =
+  process.env.NODE_ENV === "production"
+    ? "/dhoni-entertainment-revamp"
+    : "";
 
 export default function Img({ src, ...props }: ImageProps) {
   const resolved =
