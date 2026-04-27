@@ -78,7 +78,7 @@ function ProjectCard({
               : "(max-width: 768px) 100vw, 42vw"
           }
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-ink via-brand-ink/20 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
         <div className="absolute inset-0 bg-brand-red/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
           <span className="inline-block text-[9px] tracking-[0.3em] uppercase font-sans text-brand-red/80 border border-brand-red/30 px-3 py-1 mb-3">
@@ -235,7 +235,7 @@ export default function HomePage() {
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="w-px h-14 bg-gradient-to-b from-brand-red to-transparent"
+            className="w-px h-14 bg-linear-to-b from-brand-red to-transparent"
           />
         </motion.div>
       </section>

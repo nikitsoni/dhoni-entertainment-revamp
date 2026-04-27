@@ -157,7 +157,7 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
           className="object-cover transition-transform duration-700 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-surface-2/90 via-surface-2/10 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent" />
 
         {/* Hover overlay */}
         <motion.div
@@ -169,7 +169,7 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
 
         {/* Type badge */}
         <div className="absolute top-4 left-4">
-          <span className="inline-block text-[9px] tracking-[0.3em] uppercase font-sans text-white bg-brand-ink/80 border border-surface-3 px-3 py-1.5">
+          <span className="inline-block text-[9px] tracking-[0.3em] uppercase font-sans text-white bg-black/70 border border-white/20 px-3 py-1.5">
             {project.type}
           </span>
         </div>

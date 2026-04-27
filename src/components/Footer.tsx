@@ -33,7 +33,7 @@ const legalLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-surface border-t border-surface-3">
+    <footer className="bg-[#111111] border-t border-[#222222]">
       <div className="wrapper pt-20 pb-10">
         {/* Big CTA row */}
         <div className="border-b border-surface-3 pb-16 mb-16">

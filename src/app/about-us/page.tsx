@@ -118,7 +118,7 @@ export default function AboutPage() {
                 >
                   {/* Image */}
                   <div
-                    className={`relative aspect-[4/5] lg:aspect-auto lg:min-h-[600px] overflow-hidden ${
+                    className={`relative aspect-4/5 lg:aspect-auto lg:min-h-150 overflow-hidden ${
                       i % 2 === 1 ? "lg:order-2" : ""
                     }`}
                   >
@@ -129,7 +129,7 @@ export default function AboutPage() {
                       className="object-cover object-top transition-transform duration-700 hover:scale-105"
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/60 to-transparent lg:hidden" />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent lg:hidden" />
                   </div>
 
                   {/* Content */}
@@ -247,7 +247,7 @@ function TeamCard({ member }: { member: (typeof team)[0] }) {
           className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-surface-2/90 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
       </div>
 
       {/* Info */}

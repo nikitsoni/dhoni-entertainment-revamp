@@ -108,9 +108,9 @@ export default function GalleryPage() {
                   <div
                     className={`relative w-full overflow-hidden ${
                       i % 5 === 0 || i % 7 === 0
-                        ? "aspect-[3/4]"
+                        ? "aspect-3/4"
                         : i % 3 === 0
-                        ? "aspect-[4/3]"
+                        ? "aspect-4/3"
                         : "aspect-square"
                     }`}
                   >
@@ -122,7 +122,7 @@ export default function GalleryPage() {
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     />
                     {/* Hover overlay */}
-                    <div className="absolute inset-0 bg-brand-ink/60 opacity-0 group-hover:opacity-100 transition-opacity duration-400 flex items-center justify-center">
+                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-400 flex items-center justify-center">
                       <div className="w-12 h-12 border border-white/50 flex items-center justify-center">
                         <span className="text-white text-lg">+</span>
                       </div>
@@ -147,7 +147,7 @@ export default function GalleryPage() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-[200] bg-brand-ink/95 backdrop-blur-sm flex items-center justify-center"
+            className="fixed inset-0 z-200 bg-black/95 backdrop-blur-sm flex items-center justify-center"
             onClick={closeLightbox}
           >
             {/* Close */}
