@@ -51,8 +51,8 @@ export default function Navigation() {
             <Image
               src="/img/de-logo.png"
               alt="Dhoni Entertainment"
-              width={75}
-              height={75}
+              width={90}
+              height={90}
               className="rounded-sm"
               priority
             />

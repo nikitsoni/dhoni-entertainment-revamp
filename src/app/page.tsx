@@ -147,56 +147,51 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="text-muted text-[10px] tracking-[0.45em] uppercase font-sans mb-12"
+            className="text-brand-red text-[10px] tracking-[0.5em] uppercase font-sans mb-8"
           >
-            Dhoni Entertainment — Est. 2018
+            Est. 2018 · Mumbai
           </motion.p>
 
-          <div className="overflow-hidden">
+          <div className="overflow-hidden mb-2">
             <motion.h1
               initial={{ y: "110%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1.1, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-              className="font-playfair font-black leading-[0.82] tracking-[-0.02em] text-brand-white"
-              style={{ fontSize: "clamp(44px, 10vw, 110px)" }}
+              transition={{ duration: 1.1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+              className="font-playfair font-black leading-none tracking-tight text-brand-white"
+              style={{ fontSize: "clamp(38px, 8vw, 96px)" }}
             >
-              MIND
+              DHONI
             </motion.h1>
           </div>
 
-          <div className="overflow-hidden">
+          <div className="overflow-hidden mb-8">
             <motion.div
               initial={{ y: "110%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1.1, delay: 0.48, ease: [0.22, 1, 0.36, 1] }}
-              className="font-playfair font-black leading-[0.82] tracking-[-0.02em] text-brand-white"
-              style={{ fontSize: "clamp(44px, 10vw, 110px)" }}
+              transition={{ duration: 1.1, delay: 0.44, ease: [0.22, 1, 0.36, 1] }}
+              className="font-playfair font-black leading-none tracking-tight text-brand-red"
+              style={{ fontSize: "clamp(38px, 8vw, 96px)" }}
             >
-              OVER
+              ENTERTAINMENT
             </motion.div>
           </div>
 
-          <div className="overflow-hidden">
-            <motion.div
-              initial={{ y: "110%", opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1.1, delay: 0.61, ease: [0.22, 1, 0.36, 1] }}
-              className="font-playfair font-black leading-[0.82] tracking-[-0.02em] text-brand-red"
-              style={{ fontSize: "clamp(44px, 10vw, 110px)" }}
-            >
-              MATTER
-            </motion.div>
-          </div>
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.85 }}
+            className="text-muted text-xs tracking-[0.35em] uppercase font-sans mb-8"
+          >
+            Mind Over Matter
+          </motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="text-muted text-sm font-sans mt-10 tracking-[0.12em] leading-relaxed max-w-md mx-auto"
+            className="text-muted text-sm font-sans tracking-[0.08em] leading-relaxed max-w-sm mx-auto"
           >
-            A production company co-founded by
-            <br />
-            MS Dhoni &amp; Sakshi Singh Dhoni
+            A production company co-founded by MS Dhoni &amp; Sakshi Singh Dhoni
           </motion.p>
 
           <motion.div
