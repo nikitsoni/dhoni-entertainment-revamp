@@ -49,7 +49,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="z-10 shrink-0">
             <Image
-              src="/img/de-logo.png"
+              src="/img/de-logo.jpeg"
               alt="Dhoni Entertainment"
               width={90}
               height={90}

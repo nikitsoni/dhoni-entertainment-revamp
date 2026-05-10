@@ -33,16 +33,16 @@ const legalLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#111111] border-t border-[#222222]">
+    <footer className="bg-[#111111] border-t border-[#2a2a2a]">
       <div className="wrapper pt-20 pb-10">
         {/* Big CTA row */}
-        <div className="border-b border-surface-3 pb-16 mb-16">
+        <div className="border-b border-[#2a2a2a] pb-16 mb-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
             <div>
-              <p className="text-muted text-xs tracking-[0.3em] uppercase font-sans mb-4">
+              <p className="text-[#666] text-xs tracking-[0.3em] uppercase font-sans mb-4">
                 Est. 2018 · Mumbai
               </p>
-              <h2 className="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl text-brand-white leading-none">
+              <h2 className="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl text-brand-ink leading-none">
                 Mind Over<br />
                 <span className="text-brand-red">Matter.</span>
               </h2>
@@ -65,21 +65,21 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="inline-block mb-5">
               <Image
-                src="/img/de-logo.png"
+                src="/img/de-logo.jpeg"
                 alt="Dhoni Entertainment"
-                width={100}
-                height={100}
+                width={64}
+                height={64}
                 className="rounded-sm"
               />
             </Link>
-            <p className="text-muted text-sm font-playfair italic">
+            <p className="text-[#888] text-sm font-playfair italic">
               Mind Over Matter
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <p className="text-muted-2 text-[10px] tracking-[0.3em] uppercase font-sans mb-5">
+            <p className="text-[#555] text-[10px] tracking-[0.3em] uppercase font-sans mb-5">
               Pages
             </p>
             <ul className="flex flex-col gap-3">
@@ -87,7 +87,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-muted text-sm font-sans hover:text-brand-white transition-colors duration-200 link-underline"
+                    className="text-[#888] text-sm font-sans hover:text-brand-ink transition-colors duration-200 link-underline"
                   >
                     {link.label}
                   </Link>
@@ -98,23 +98,23 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <p className="text-muted-2 text-[10px] tracking-[0.3em] uppercase font-sans mb-5">
+            <p className="text-[#555] text-[10px] tracking-[0.3em] uppercase font-sans mb-5">
               Contact
             </p>
             <div className="flex flex-col gap-3">
               <a
                 href="mailto:contact@msdhonientertainment.com"
-                className="text-muted text-sm font-sans hover:text-brand-white transition-colors duration-200 break-all"
+                className="text-[#888] text-sm font-sans hover:text-brand-ink transition-colors duration-200 break-all"
               >
                 contact@msdhonientertainment.com
               </a>
               <a
                 href="tel:+917304507781"
-                className="text-muted text-sm font-sans hover:text-brand-white transition-colors duration-200"
+                className="text-[#888] text-sm font-sans hover:text-brand-ink transition-colors duration-200"
               >
                 +91 73045 07781
               </a>
-              <p className="text-muted-2 text-sm font-sans leading-relaxed">
+              <p className="text-[#555] text-sm font-sans leading-relaxed">
                 207, Adani Inspire Hub,
                 <br />
                 Andheri West,
@@ -126,7 +126,7 @@ export default function Footer() {
 
           {/* Social */}
           <div>
-            <p className="text-muted-2 text-[10px] tracking-[0.3em] uppercase font-sans mb-5">
+            <p className="text-[#555] text-[10px] tracking-[0.3em] uppercase font-sans mb-5">
               Follow Us
             </p>
             <ul className="flex flex-col gap-3">
@@ -136,7 +136,7 @@ export default function Footer() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-muted text-sm font-sans hover:text-brand-red transition-colors duration-200 flex items-center gap-2 group"
+                    className="text-[#888] text-sm font-sans hover:text-brand-red transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <span className="w-1 h-1 rounded-full bg-brand-red opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
                     {link.label}
@@ -148,8 +148,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-surface-3 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <p className="text-muted-2 text-xs font-sans">
+        <div className="border-t border-[#2a2a2a] pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <p className="text-[#555] text-xs font-sans">
             © {new Date().getFullYear()} Dhoni Entertainment Pvt. Ltd. All
             Rights Reserved.
           </p>
@@ -158,7 +158,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-muted-2 text-xs font-sans hover:text-muted transition-colors"
+                className="text-[#555] text-xs font-sans hover:text-[#888] transition-colors"
               >
                 {link.label}
               </Link>
