@@ -65,7 +65,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="inline-block mb-5">
               <Image
-                src="/img/de-logo.jpeg"
+                src="/img/de-logo.png"
                 alt="Dhoni Entertainment"
                 width={64}
                 height={64}
