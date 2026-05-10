@@ -157,8 +157,7 @@ export default function HomePage() {
               initial={{ y: "110%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1.1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="font-playfair font-black leading-none tracking-tight text-brand-white"
-              style={{ fontSize: "clamp(38px, 8vw, 96px)" }}
+              className="font-playfair font-black leading-none tracking-tight text-brand-white text-[clamp(28px,7vw,96px)]"
             >
               DHONI
             </motion.h1>
@@ -169,8 +168,7 @@ export default function HomePage() {
               initial={{ y: "110%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1.1, delay: 0.44, ease: [0.22, 1, 0.36, 1] }}
-              className="font-playfair font-black leading-none tracking-tight text-brand-red"
-              style={{ fontSize: "clamp(38px, 8vw, 96px)" }}
+              className="font-playfair font-black leading-none tracking-tight text-brand-red text-[clamp(18px,4.8vw,96px)]"
             >
               ENTERTAINMENT
             </motion.div>
