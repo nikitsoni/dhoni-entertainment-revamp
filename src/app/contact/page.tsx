@@ -85,7 +85,7 @@ export default function ContactPage() {
                   </p>
                   <a
                     href="mailto:contact@msdhonientertainment.com"
-                    className="font-playfair font-bold text-2xl md:text-3xl text-brand-white hover:text-brand-red transition-colors duration-300 break-all"
+                    className="font-playfair font-bold text-lg md:text-2xl lg:text-3xl text-brand-white hover:text-brand-red transition-colors duration-300 break-all"
                   >
                     contact@msdhonientertainment.com
                   </a>
@@ -100,7 +100,7 @@ export default function ContactPage() {
                   </p>
                   <a
                     href="tel:+917304507781"
-                    className="font-playfair font-bold text-2xl md:text-3xl text-brand-white hover:text-brand-red transition-colors duration-300"
+                    className="font-playfair font-bold text-lg md:text-2xl lg:text-3xl text-brand-white hover:text-brand-red transition-colors duration-300"
                   >
                     +91 73045 07781
                   </a>

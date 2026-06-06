@@ -190,7 +190,7 @@ export default function GalleryPage() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.25 }}
-              className="relative max-w-4xl max-h-[85vh] w-full mx-16 md:mx-24"
+              className="relative max-w-4xl max-h-[85vh] w-full mx-4 md:mx-16 lg:mx-24"
               onClick={(e) => e.stopPropagation()}
             >
               <Image

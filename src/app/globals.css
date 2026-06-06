@@ -7,8 +7,8 @@
 
 @theme {
   /* Brand Colors */
-  --color-brand-red: #bc0202;
-  --color-brand-red-hover: #a00202;
+  --color-brand-red: #3D4A2E;
+  --color-brand-red-hover: #2E3A21;
   --color-brand-white: #111111;
   --color-brand-cream: #f5f0eb;
   --color-brand-ink: #F5EDE8;
@@ -69,14 +69,14 @@ body {
 
 /* ── Text selection ── */
 ::selection {
-  background-color: #bc0202;
+  background-color: #3D4A2E;
   color: #f5ede8;
 }
 
 /* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 3px; }
 ::-webkit-scrollbar-track { background: #111; }
-::-webkit-scrollbar-thumb { background: #bc0202; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #3D4A2E; border-radius: 3px; }
 
 /* ── Film Grain Overlay ── */
 body::after {
@@ -147,7 +147,7 @@ body::after {
   left: 0;
   width: 0;
   height: 1px;
-  background: #bc0202;
+  background: #3D4A2E;
   transition: width 0.3s ease;
 }
 .link-underline:hover::after {

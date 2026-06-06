@@ -53,7 +53,7 @@ export default function Navigation() {
               alt="Dhoni Entertainment"
               width={90}
               height={90}
-              className="rounded-sm"
+              className="rounded-sm w-12 h-12 md:w-[72px] md:h-[72px]"
               priority
             />
           </Link>
@@ -133,7 +133,7 @@ export default function Navigation() {
                       <Link
                         href={link.href}
                         onClick={() => setIsOpen(false)}
-                        className={`text-5xl font-playfair font-bold leading-tight transition-colors duration-200 hover:text-brand-red ${
+                        className={`text-4xl sm:text-5xl font-playfair font-bold leading-tight transition-colors duration-200 hover:text-brand-red ${
                           pathname === link.href
                             ? "text-brand-red"
                             : "text-brand-white"

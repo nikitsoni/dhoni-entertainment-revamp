@@ -75,7 +75,7 @@ export default function NewsPage() {
             className="mt-10 flex items-center gap-8"
           >
             <div>
-              <p className="font-playfair font-black text-5xl md:text-6xl text-brand-white leading-none">
+              <p className="font-playfair font-black text-3xl sm:text-4xl md:text-5xl text-brand-white leading-none">
                 276+
               </p>
               <p className="text-muted text-[10px] tracking-[0.25em] uppercase font-sans mt-2">
@@ -84,7 +84,7 @@ export default function NewsPage() {
             </div>
             <div className="w-px h-16 bg-surface-3" />
             <div>
-              <p className="font-playfair font-black text-5xl md:text-6xl text-brand-white leading-none">
+              <p className="font-playfair font-black text-3xl sm:text-4xl md:text-5xl text-brand-white leading-none">
                 50+
               </p>
               <p className="text-muted text-[10px] tracking-[0.25em] uppercase font-sans mt-2">
@@ -106,7 +106,7 @@ export default function NewsPage() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block border border-surface-3 px-4 py-5 hover:border-brand-red/50 hover:bg-surface-2 transition-all duration-200 group -m-px min-h-[80px] flex items-center justify-center"
+                  className="border border-surface-3 px-4 py-5 hover:border-brand-red/50 hover:bg-surface-2 transition-all duration-200 group -m-px min-h-20 flex items-center justify-center"
                 >
                   <span className="text-muted text-[10px] tracking-[0.12em] uppercase font-sans text-center leading-relaxed group-hover:text-brand-white transition-colors duration-200 line-clamp-2">
                     {item.brand}

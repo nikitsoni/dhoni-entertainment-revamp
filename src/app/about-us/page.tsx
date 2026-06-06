@@ -134,7 +134,7 @@ export default function AboutPage() {
 
                   {/* Content */}
                   <div
-                    className={`bg-surface flex flex-col justify-center p-10 md:p-16 lg:p-20 ${
+                    className={`bg-surface flex flex-col justify-center p-6 md:p-12 lg:p-20 ${
                       i % 2 === 1 ? "lg:order-1" : ""
                     }`}
                   >
