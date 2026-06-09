@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/dhoni-entertainment-revamp",
+  basePath: isProd ? "/dhoni-entertainment-revamp" : "",
   images: {
     unoptimized: true,
   },

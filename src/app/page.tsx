@@ -85,20 +85,20 @@ function ProjectCard({
             {project.type}
           </span>
           <h3
-            className={`font-playfair font-bold text-brand-white leading-tight mb-2 ${
+            className={`font-playfair font-bold text-white leading-tight mb-2 ${
               large ? "text-2xl md:text-3xl" : "text-xl md:text-2xl"
             }`}
           >
             {project.title}
           </h3>
           <div className="flex items-center gap-2 overflow-hidden h-0 group-hover:h-5 transition-all duration-500">
-            <span className="text-muted text-xs font-sans">
+            <span className="text-white/60 text-xs font-sans">
               {project.language}
             </span>
             {project.genre && (
               <>
-                <span className="text-muted-2 text-xs">·</span>
-                <span className="text-muted text-xs font-sans">
+                <span className="text-white/40 text-xs">·</span>
+                <span className="text-white/60 text-xs font-sans">
                   {project.genre}
                 </span>
               </>
@@ -117,149 +117,129 @@ export default function HomePage() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="relative min-h-screen flex flex-col md:flex-row overflow-hidden">
+      <section className="relative h-screen min-h-[640px] flex items-center overflow-hidden bg-black">
+        <Image
+          src="/img/LGM_TITILE LOOK3x2.jpg"
+          alt="Dhoni Entertainment — Stories That Stay"
+          fill
+          className="object-cover opacity-55"
+          priority
+          sizes="100vw"
+        />
+        {/* Left-to-right dark vignette */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/10" />
+        {/* Top-to-bottom dark gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/25" />
 
-        {/* LEFT: Text Panel */}
-        <div className="relative flex flex-col justify-center bg-brand-ink px-8 sm:px-12 md:px-16 lg:px-24 pt-36 pb-20 md:pt-0 md:pb-0 w-full md:w-[48%] lg:w-[45%] shrink-0">
-
-          {/* Slide numbers (decorative) */}
-          <div className="absolute left-5 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center gap-6">
-            {["01", "02", "03"].map((n, i) => (
-              <span
-                key={n}
-                className={`font-sans font-medium text-[11px] leading-none ${
-                  i === 0 ? "text-brand-white" : "text-muted-2"
-                }`}
-              >
-                {n}
-              </span>
-            ))}
-          </div>
-
-          {/* Eyebrow */}
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.15 }}
-            className="text-muted text-[10px] tracking-[0.42em] uppercase font-sans mb-8"
-          >
-            Dream · Believe · Achieve
-          </motion.p>
-
-          {/* Main heading */}
-          <h1
-            className="font-playfair font-black leading-[0.92] tracking-tight text-brand-white mb-8"
-            style={{ fontSize: "clamp(48px, 6.5vw, 100px)" }}
-          >
-            <div className="overflow-hidden mb-1">
-              <motion.span
-                className="block"
-                initial={{ y: "110%", opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1.1, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-              >
-                Stories
-              </motion.span>
-            </div>
-            <div className="overflow-hidden">
-              <motion.span
-                className="block"
-                initial={{ y: "110%", opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1.1, delay: 0.38, ease: [0.22, 1, 0.36, 1] }}
-              >
-                That <span className="text-brand-red">Stay.</span>
-              </motion.span>
-            </div>
-          </h1>
-
-          {/* Divider line */}
-          <motion.div
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: 0.8, delay: 0.72, ease: [0.22, 1, 0.36, 1] }}
-            className="w-12 h-px bg-brand-red mb-8 origin-left"
-          />
-
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.88 }}
-            className="text-muted text-sm font-sans leading-relaxed max-w-[280px] mb-10"
-          >
-            Dhoni Entertainment is a global content company creating meaningful
-            stories that inspire, entertain and endure.
-          </motion.p>
-
-          {/* CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.05 }}
-          >
-            <Link
-              href="/projects"
-              className="inline-flex items-center gap-4 bg-brand-red text-white text-[11px] tracking-[0.28em] uppercase font-sans px-8 py-4 hover:bg-brand-red-hover transition-colors duration-300 group"
+        {/* Content */}
+        <div className="relative z-10 wrapper w-full">
+          <div className="max-w-2xl">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-white/45 text-[10px] tracking-[0.45em] uppercase font-sans mb-8"
             >
-              Explore Our Work
-              <span className="transition-transform duration-300 group-hover:translate-x-1">
-                →
-              </span>
-            </Link>
-          </motion.div>
+              Dream · Believe · Achieve
+            </motion.p>
 
-          {/* Bottom label */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.6, duration: 0.8 }}
-            className="absolute bottom-8 text-muted-2 text-[9px] tracking-[0.3em] uppercase font-sans"
-          >
-            Dhoni Entertainment · Est. 2018
-          </motion.p>
-        </div>
+            <h1
+              className="font-playfair font-bold text-white leading-[0.88] tracking-tight mb-8"
+              style={{ fontSize: "clamp(56px, 8.5vw, 120px)" }}
+            >
+              <div className="overflow-hidden mb-1">
+                <motion.span
+                  className="block"
+                  initial={{ y: "110%", opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 1.1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  Stories
+                </motion.span>
+              </div>
+              <div className="overflow-hidden">
+                <motion.span
+                  className="block"
+                  initial={{ y: "110%", opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 1.1, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  That{" "}
+                  <span className="text-brand-red italic">Stay.</span>
+                </motion.span>
+              </div>
+            </h1>
 
-        {/* RIGHT: Cinematic Image */}
-        <div className="relative flex-1 min-h-[60vw] md:min-h-0">
-          <Image
-            src="/img/home-roar-of-the-lion.jpg"
-            alt="Dhoni Entertainment — Stories That Stay"
-            fill
-            className="object-cover"
-            priority
-            sizes="(max-width: 768px) 100vw, 55vw"
-          />
-          {/* Gradient: left blend into text panel */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to right, #F5EDE8 0%, rgba(245,237,232,0.25) 28%, transparent 58%)",
-            }}
-          />
-          {/* Bottom vignette */}
-          <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent" />
-
-          {/* Scroll indicator */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.8, duration: 0.8 }}
-            className="absolute bottom-10 right-8 flex flex-col items-center gap-2"
-          >
-            <span className="text-white/70 text-[9px] tracking-[0.35em] uppercase font-sans writing-vertical">
-              Scroll Down
-            </span>
             <motion.div
-              animate={{ y: [0, 8, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="text-white/50 text-sm mt-1"
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{ duration: 0.8, delay: 0.85, ease: [0.22, 1, 0.36, 1] }}
+              className="w-12 h-px bg-brand-red mb-8 origin-left"
+            />
+
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.0 }}
+              className="text-white/60 text-sm md:text-base font-sans leading-relaxed max-w-xs mb-10"
             >
-              ↓
+              A global content company creating meaningful stories that
+              inspire, entertain and endure.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.15 }}
+              className="flex flex-wrap items-center gap-5"
+            >
+              <Link
+                href="/projects"
+                className="inline-flex items-center gap-4 bg-brand-red text-white text-[11px] tracking-[0.28em] uppercase font-sans px-8 py-4 hover:bg-brand-red-hover transition-colors duration-300 group"
+              >
+                Explore Our Work
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
+              </Link>
+              <Link
+                href="/about-us"
+                className="text-white/50 text-[11px] tracking-[0.25em] uppercase font-sans hover:text-white transition-colors duration-300 group"
+              >
+                About Us{" "}
+                <span className="transition-transform duration-300 inline-block group-hover:translate-x-1">
+                  →
+                </span>
+              </Link>
             </motion.div>
-          </motion.div>
+          </div>
         </div>
+
+        {/* Bottom bar */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.7, duration: 0.8 }}
+          className="absolute bottom-0 left-0 right-0 border-t border-white/10"
+        >
+          <div className="wrapper py-5 flex items-center justify-between">
+            <p className="text-white/30 text-[9px] tracking-[0.35em] uppercase font-sans">
+              Dhoni Entertainment · Est. 2018
+            </p>
+            <div className="flex items-center gap-2.5">
+              <span className="text-white/30 text-[9px] tracking-[0.35em] uppercase font-sans">
+                Scroll
+              </span>
+              <motion.span
+                animate={{ y: [0, 6, 0] }}
+                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                className="text-white/30 text-sm"
+              >
+                ↓
+              </motion.span>
+            </div>
+          </div>
+        </motion.div>
       </section>
 
       {/* ── MARQUEE ── */}
@@ -276,10 +256,10 @@ export default function HomePage() {
                 </p>
               </FadeUp>
               <FadeUp delay={0.1}>
-                <h2 className="font-playfair font-black text-3xl md:text-4xl lg:text-5xl text-brand-white leading-tight tracking-tight">
+                <h2 className="font-playfair font-bold text-3xl md:text-4xl lg:text-5xl text-brand-white leading-tight tracking-tight">
                   OUR
                   <br />
-                  <span className="text-brand-red">PUR</span>POSE
+                  <span className="text-brand-red italic">Purpose</span>
                 </h2>
               </FadeUp>
               <FadeUp delay={0.2}>
@@ -338,7 +318,7 @@ export default function HomePage() {
                 transition={{ duration: 0.8, delay: i * 0.15 }}
                 className="text-center py-16 px-8"
               >
-                <p className="font-playfair font-black text-6xl md:text-7xl text-brand-white leading-none mb-3">
+                <p className="font-playfair font-bold text-6xl md:text-7xl text-brand-white leading-none mb-3">
                   {stat.number}
                 </p>
                 <p className="text-muted text-[10px] tracking-[0.3em] uppercase font-sans">
@@ -361,7 +341,7 @@ export default function HomePage() {
                 </p>
               </FadeUp>
               <FadeUp delay={0.1}>
-                <h2 className="font-playfair font-black text-3xl md:text-4xl lg:text-5xl text-brand-white leading-none tracking-tight">
+                <h2 className="font-playfair font-bold text-3xl md:text-4xl lg:text-5xl text-brand-white leading-none tracking-tight">
                   OUR PROJECTS
                 </h2>
               </FadeUp>
@@ -414,7 +394,7 @@ export default function HomePage() {
                 </p>
               </FadeUp>
               <FadeUp delay={0.1}>
-                <h2 className="font-playfair font-black text-3xl md:text-4xl lg:text-5xl text-brand-white leading-none tracking-tight">
+                <h2 className="font-playfair font-bold text-3xl md:text-4xl lg:text-5xl text-brand-white leading-none tracking-tight">
                   IN THE NEWS
                 </h2>
               </FadeUp>

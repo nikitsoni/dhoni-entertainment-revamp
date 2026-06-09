@@ -27,6 +27,7 @@ export default function Navigation() {
 
   useEffect(() => {
     setIsOpen(false);
+    setScrolled(window.scrollY > 80);
   }, [pathname]);
 
   useEffect(() => {
@@ -46,16 +47,30 @@ export default function Navigation() {
         }`}
       >
         <div className="wrapper py-5 flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo — white on dark hero (home, unscrolled), dark otherwise */}
           <Link href="/" className="z-10 shrink-0">
-            <Image
-              src="/img/de-logo.jpeg"
-              alt="Dhoni Entertainment"
-              width={90}
-              height={90}
-              className="rounded-sm w-12 h-12 md:w-[72px] md:h-[72px]"
-              priority
-            />
+            <div className="relative w-12 h-12 md:w-[72px] md:h-[72px]">
+              <Image
+                src="/img/de-logo.png"
+                alt="Dhoni Entertainment"
+                width={90}
+                height={90}
+                className={`rounded-sm absolute inset-0 w-full h-full transition-opacity duration-500 ${
+                  pathname === "/" && !scrolled ? "opacity-100" : "opacity-0"
+                }`}
+                priority
+              />
+              <Image
+                src="/img/de-logo.jpeg"
+                alt="Dhoni Entertainment"
+                width={90}
+                height={90}
+                className={`rounded-sm absolute inset-0 w-full h-full transition-opacity duration-500 ${
+                  pathname === "/" && !scrolled ? "opacity-0" : "opacity-100"
+                }`}
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop nav */}

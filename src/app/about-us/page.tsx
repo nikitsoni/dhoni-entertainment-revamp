@@ -57,7 +57,7 @@ export default function AboutPage() {
               initial={{ y: "100%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="font-playfair font-black text-5xl md:text-6xl lg:text-7xl text-brand-white leading-none tracking-tight"
+              className="font-playfair font-bold text-5xl md:text-6xl lg:text-7xl text-brand-white leading-none tracking-tight"
             >
               WHO
               <br />
@@ -102,7 +102,7 @@ export default function AboutPage() {
               </p>
             </FadeUp>
             <FadeUp delay={0.1}>
-              <h2 className="font-playfair font-black text-5xl md:text-6xl lg:text-7xl text-brand-white leading-none tracking-tight">
+              <h2 className="font-playfair font-bold text-5xl md:text-6xl lg:text-7xl text-brand-white leading-none tracking-tight">
                 FOUNDERS
               </h2>
             </FadeUp>
@@ -172,7 +172,7 @@ export default function AboutPage() {
               </p>
             </FadeUp>
             <FadeUp delay={0.1}>
-              <h2 className="font-playfair font-black text-5xl md:text-6xl lg:text-7xl text-brand-white leading-none tracking-tight">
+              <h2 className="font-playfair font-bold text-5xl md:text-6xl lg:text-7xl text-brand-white leading-none tracking-tight">
                 THE TEAM
               </h2>
             </FadeUp>
@@ -193,7 +193,7 @@ export default function AboutPage() {
         <div className="wrapper">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <FadeUp>
-              <h2 className="font-playfair font-black text-4xl md:text-5xl lg:text-6xl text-brand-white leading-none tracking-tight">
+              <h2 className="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl text-brand-white leading-none tracking-tight">
                 MIND
                 <br />
                 <span className="text-brand-red">OVER</span>

@@ -59,7 +59,7 @@ export default function NewsPage() {
               initial={{ y: "100%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="font-playfair font-black text-5xl md:text-6xl lg:text-7xl text-brand-white leading-none tracking-tight"
+              className="font-playfair font-bold text-5xl md:text-6xl lg:text-7xl text-brand-white leading-none tracking-tight"
             >
               IN THE
               <br />
@@ -75,7 +75,7 @@ export default function NewsPage() {
             className="mt-10 flex items-center gap-8"
           >
             <div>
-              <p className="font-playfair font-black text-3xl sm:text-4xl md:text-5xl text-brand-white leading-none">
+              <p className="font-playfair font-bold text-3xl sm:text-4xl md:text-5xl text-brand-white leading-none">
                 276+
               </p>
               <p className="text-muted text-[10px] tracking-[0.25em] uppercase font-sans mt-2">
@@ -84,7 +84,7 @@ export default function NewsPage() {
             </div>
             <div className="w-px h-16 bg-surface-3" />
             <div>
-              <p className="font-playfair font-black text-3xl sm:text-4xl md:text-5xl text-brand-white leading-none">
+              <p className="font-playfair font-bold text-3xl sm:text-4xl md:text-5xl text-brand-white leading-none">
                 50+
               </p>
               <p className="text-muted text-[10px] tracking-[0.25em] uppercase font-sans mt-2">

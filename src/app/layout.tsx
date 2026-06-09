@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Syne, Inter } from "next/font/google";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const syne = Syne({
+const cormorant = Cormorant_Garamond({
   variable: "--font-playfair-var",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
-const inter = Inter({
+const dmSans = DM_Sans({
   variable: "--font-dm-sans-var",
   subsets: ["latin"],
   display: "swap",
@@ -41,7 +42,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${syne.variable} ${inter.variable}`}
+      className={`${cormorant.variable} ${dmSans.variable}`}
     >
       <body suppressHydrationWarning>
         <Navigation />

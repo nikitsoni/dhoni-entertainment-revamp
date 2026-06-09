@@ -53,7 +53,7 @@ export default function ContactPage() {
               initial={{ y: "100%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="font-playfair font-black leading-none tracking-tight text-brand-white"
+              className="font-playfair font-bold leading-none tracking-tight text-brand-white"
               style={{ fontSize: "clamp(44px, 9vw, 96px)" }}
             >
               LET&apos;S
