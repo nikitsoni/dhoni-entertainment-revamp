@@ -116,71 +116,44 @@ export default function HomePage() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="relative h-screen min-h-[640px] flex items-center overflow-hidden bg-black">
-        <Image
-          src="/img/LGM_TITILE LOOK3x2.jpg"
-          alt="Dhoni Entertainment — Stories That Stay"
-          fill
-          className="object-cover opacity-55"
-          priority
-          sizes="100vw"
-        />
-        {/* Left-to-right dark vignette */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/10" />
-        {/* Top-to-bottom dark gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/25" />
-
-        {/* Content */}
-        <div className="relative z-10 wrapper w-full">
-          <div className="max-w-3xl">
-            <h1
-              className="font-playfair font-bold text-white leading-[0.88] tracking-tight mb-6"
-              style={{ fontSize: "clamp(64px, 10vw, 140px)" }}
-            >
-              <div className="overflow-hidden mb-1">
-                <motion.span
-                  className="block"
-                  initial={{ y: "110%", opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 1.1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                >
-                  Mind
-                </motion.span>
-              </div>
-              <div className="overflow-hidden mb-1">
-                <motion.span
-                  className="block"
-                  initial={{ y: "110%", opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 1.1, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                >
-                  Over
-                </motion.span>
-              </div>
-              <div className="overflow-hidden">
-                <motion.span
-                  className="block italic text-brand-red"
-                  initial={{ y: "110%", opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 1.1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                >
-                  Matter.
-                </motion.span>
-              </div>
-            </h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.9 }}
-              className="text-white/50 text-sm font-sans leading-relaxed max-w-xs"
-            >
-              A global content company creating stories that inspire,
-              entertain and endure.
-            </motion.p>
-          </div>
+      <section className="relative h-screen min-h-[600px] flex items-center bg-brand-ink overflow-hidden">
+        <div className="wrapper w-full">
+          <h1
+            className="font-playfair font-bold leading-[0.82] tracking-tight"
+            style={{ fontSize: "clamp(88px, 17vw, 240px)" }}
+          >
+            <div className="overflow-hidden">
+              <motion.span
+                className="block text-brand-white"
+                initial={{ y: "105%", opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1.1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+              >
+                Mind
+              </motion.span>
+            </div>
+            <div className="overflow-hidden">
+              <motion.span
+                className="block text-brand-white"
+                initial={{ y: "105%", opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1.1, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
+              >
+                Over
+              </motion.span>
+            </div>
+            <div className="overflow-hidden">
+              <motion.span
+                className="block italic text-brand-red"
+                initial={{ y: "105%", opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1.1, delay: 0.34, ease: [0.22, 1, 0.36, 1] }}
+              >
+                Matter.
+              </motion.span>
+            </div>
+          </h1>
         </div>
-
       </section>
 
 

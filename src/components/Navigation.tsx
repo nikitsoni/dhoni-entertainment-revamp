@@ -47,30 +47,16 @@ export default function Navigation() {
         }`}
       >
         <div className="wrapper py-5 flex items-center justify-between">
-          {/* Logo — white on dark hero (home, unscrolled), dark otherwise */}
+          {/* Logo */}
           <Link href="/" className="z-10 shrink-0">
-            <div className="relative w-12 h-12 md:w-[72px] md:h-[72px]">
-              <Image
-                src="/img/de-logo.png"
-                alt="Dhoni Entertainment"
-                width={90}
-                height={90}
-                className={`rounded-sm absolute inset-0 w-full h-full transition-opacity duration-500 ${
-                  pathname === "/" && !scrolled ? "opacity-100" : "opacity-0"
-                }`}
-                priority
-              />
-              <Image
-                src="/img/de-logo.jpeg"
-                alt="Dhoni Entertainment"
-                width={90}
-                height={90}
-                className={`rounded-sm absolute inset-0 w-full h-full transition-opacity duration-500 ${
-                  pathname === "/" && !scrolled ? "opacity-0" : "opacity-100"
-                }`}
-                priority
-              />
-            </div>
+            <Image
+              src="/img/de-logo.jpeg"
+              alt="Dhoni Entertainment"
+              width={90}
+              height={90}
+              className="rounded-sm w-12 h-12 md:w-[72px] md:h-[72px]"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}
