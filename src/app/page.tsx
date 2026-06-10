@@ -117,21 +117,21 @@ export default function HomePage() {
     <>
       {/* ── HERO ── */}
       <section className="relative h-screen min-h-[600px] flex items-center bg-brand-ink overflow-hidden">
-        {/* Olive glow top-right, shadow bottom-left */}
+        {/* Gradient wash */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "radial-gradient(ellipse 75% 65% at 95% 5%, rgba(61,74,46,0.10) 0%, transparent 100%), " +
-              "radial-gradient(ellipse 55% 55% at 5% 100%, rgba(0,0,0,0.07) 0%, transparent 100%)",
+              "radial-gradient(ellipse 80% 70% at 90% 0%, rgba(61,74,46,0.22) 0%, transparent 70%), " +
+              "radial-gradient(ellipse 60% 50% at 0% 100%, rgba(0,0,0,0.12) 0%, transparent 70%)",
           }}
         />
-        {/* Thin decorative line — right edge */}
+        {/* Decorative vertical rule */}
         <motion.div
           initial={{ scaleY: 0 }}
           animate={{ scaleY: 1 }}
           transition={{ duration: 1.2, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute right-10 top-1/2 -translate-y-1/2 w-px h-40 bg-brand-red/20 origin-top hidden md:block"
+          className="absolute right-10 top-1/2 -translate-y-1/2 w-px h-48 bg-brand-red/40 origin-top hidden md:block"
         />
         <div className="wrapper w-full">
           <h1
