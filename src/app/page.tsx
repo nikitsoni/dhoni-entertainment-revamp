@@ -4,7 +4,6 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "@/components/Img";
 import Link from "next/link";
-import MarqueeStrip from "@/components/Marquee";
 import { projects } from "@/data/projects";
 
 const featuredProjects = projects.filter((p) => p.featured);
@@ -133,85 +132,52 @@ export default function HomePage() {
 
         {/* Content */}
         <div className="relative z-10 wrapper w-full">
-          <div className="max-w-2xl">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-white/45 text-[10px] tracking-[0.45em] uppercase font-sans mb-8"
-            >
-              Dream · Believe · Achieve
-            </motion.p>
-
+          <div className="max-w-3xl">
             <h1
-              className="font-playfair font-bold text-white leading-[0.88] tracking-tight mb-8"
-              style={{ fontSize: "clamp(56px, 8.5vw, 120px)" }}
+              className="font-playfair font-bold text-white leading-[0.88] tracking-tight mb-6"
+              style={{ fontSize: "clamp(64px, 10vw, 140px)" }}
             >
               <div className="overflow-hidden mb-1">
                 <motion.span
                   className="block"
                   initial={{ y: "110%", opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 1.1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ duration: 1.1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  Stories
+                  Mind
                 </motion.span>
               </div>
-              <div className="overflow-hidden">
+              <div className="overflow-hidden mb-1">
                 <motion.span
                   className="block"
                   initial={{ y: "110%", opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 1.1, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ duration: 1.1, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  That{" "}
-                  <span className="text-brand-red italic">Stay.</span>
+                  Over
+                </motion.span>
+              </div>
+              <div className="overflow-hidden">
+                <motion.span
+                  className="block italic text-brand-red"
+                  initial={{ y: "110%", opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 1.1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  Matter.
                 </motion.span>
               </div>
             </h1>
 
-            <motion.div
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{ duration: 0.8, delay: 0.85, ease: [0.22, 1, 0.36, 1] }}
-              className="w-12 h-px bg-brand-red mb-8 origin-left"
-            />
-
             <motion.p
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.0 }}
-              className="text-white/60 text-sm md:text-base font-sans leading-relaxed max-w-xs mb-10"
+              transition={{ duration: 0.8, delay: 0.9 }}
+              className="text-white/50 text-sm font-sans leading-relaxed max-w-xs"
             >
-              A global content company creating meaningful stories that
-              inspire, entertain and endure.
+              A global content company creating stories that inspire,
+              entertain and endure.
             </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.15 }}
-              className="flex flex-wrap items-center gap-5"
-            >
-              <Link
-                href="/projects"
-                className="inline-flex items-center gap-4 bg-brand-red text-white text-[11px] tracking-[0.28em] uppercase font-sans px-8 py-4 hover:bg-brand-red-hover transition-colors duration-300 group"
-              >
-                Explore Our Work
-                <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </Link>
-              <Link
-                href="/about-us"
-                className="text-white/50 text-[11px] tracking-[0.25em] uppercase font-sans hover:text-white transition-colors duration-300 group"
-              >
-                About Us{" "}
-                <span className="transition-transform duration-300 inline-block group-hover:translate-x-1">
-                  →
-                </span>
-              </Link>
-            </motion.div>
           </div>
         </div>
 
@@ -242,8 +208,6 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* ── MARQUEE ── */}
-      <MarqueeStrip />
 
       {/* ── PURPOSE ── */}
       <section className="bg-surface py-28 md:py-40">
