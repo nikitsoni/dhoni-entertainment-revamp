@@ -181,31 +181,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.7, duration: 0.8 }}
-          className="absolute bottom-0 left-0 right-0 border-t border-white/10"
-        >
-          <div className="wrapper py-5 flex items-center justify-between">
-            <p className="text-white/30 text-[9px] tracking-[0.35em] uppercase font-sans">
-              Dhoni Entertainment · Est. 2018
-            </p>
-            <div className="flex items-center gap-2.5">
-              <span className="text-white/30 text-[9px] tracking-[0.35em] uppercase font-sans">
-                Scroll
-              </span>
-              <motion.span
-                animate={{ y: [0, 6, 0] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                className="text-white/30 text-sm"
-              >
-                ↓
-              </motion.span>
-            </div>
-          </div>
-        </motion.div>
       </section>
 
 
